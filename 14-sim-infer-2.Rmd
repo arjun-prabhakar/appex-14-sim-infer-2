@@ -1,0 +1,26 @@
+---
+title: "AppEx 14: Simulation Inference (Part 2)"
+author: "Your name here"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r packages, echo=TRUE, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(infer)
+manhattan <- read_csv("data/manhattan.csv")
+mb_yawn <- read_csv("data/mb-yawn.csv")
+```
+
+## Exercises
+
+Follow along with examples from today's lecture. See if you obtain similar
+conclusions to what we found in lecture.
+
+1. **Answered in class** Analyze the Manhattan data. Is there enough evidence to suggest that the
+mean price of a one-bedroom apartment is greater than 2400? Why or why not?
+2. **Answered in class** Analyze the yawning data. Is there enough evidence to suggest that yawning
+and observing someone yawn are not independent? Why or why not?
+3. Analyze the Manhattan data. Is there enough evidence to suggest that the *median* price of a one-bedroom apartment is greater than 2400? Why or why not?
+4. Interpret your conclusion from Exercise 3 in context of the research question. What does the p-value represent? 
